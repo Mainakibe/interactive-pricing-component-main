@@ -21,47 +21,59 @@
             </div>
         </header>
         <div class="container">
-            <div class="price">
-                <div class="followers">
-                    Pageviews
+            <div class="price-wrapper">
+                <div class="price">
+                    <div class="followers">
+                        Pageviews
+                    </div>
+                    <div class="slider-container">
+                        <input type="range" min="1" max="100" value="1" id="myRange" class="slider">
+                    </div>
+                    <div class="pricing">
+                        <div class="dollar">
+                            <h1>$</h1>
+                        </div>
+                        <div class="month">
+                            /month
+                        </div>
+                    </div>
                 </div>
-                <div class="pricing">
-                    $ /month
+                <div class="slider-billing">
+                    <div class="billing">
+                        <div class="monthly-billing">
+                            <h5>Monthly Billing</h5> 
+                            <div class="toggle-container">
+                                <div class="toggle-btn">
+                                    <div class="inner-circle"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="yearly-billing">
+                            <h5>Yearly Billing</h5> 
+                        </div>
+                         <section>25% <small> discount</small></section>
+                    </div>
                 </div>
+                <footer>
+                    <div class="list">
+                        <div class="list-items">
+                            <img src="images/icon-check.svg" alt="">
+                            <span>Unlimited websites</span>
+                        </div>
+                        <div class="list-items">
+                            <img src="images/icon-check.svg" alt="">
+                            <span>100% data ownership</span>
+                        </div>
+                        <div class="list-items">
+                            <img src="images/icon-check.svg" alt="">
+                            <span>Email reports</span>
+                        </div>
+                    </div>
+                    <button class="btn">
+                        Start my trial
+                    </button>
+                </footer>
             </div>
-            <div class="slider-billing">
-                <div class="slider">
-                    <input type="range" min="10" max="1000000" value="" id="price-slider" class="slider">
-                </div>
-                <div class="billing">
-                    <div class="monthly-billing">
-                        Monthly Billing
-                    </div>
-                    <div class="yearly-billing">
-                        Yearly Billing
-                    </div>
-                     <section>25% discount</section>
-                </div>
-            </div>
-            <footer>
-                <div class="list">
-                    <div class="list-items">
-                        <img src="images/icon-check.svg" alt="">
-                        <span>Unlimited websites</span>
-                    </div>
-                    <div class="list-items">
-                        <img src="images/icon-check.svg" alt="">
-                        <span>100% data ownership</span>
-                    </div>
-                    <div class="list-items">
-                        <img src="images/icon-check.svg" alt="">
-                        <span>Email reports</span>
-                    </div>
-                </div>
-                <button class="btn">
-                    Start my trial
-                </button>
-            </footer>
         </div>
     </div>
     <script src="./main.js"></script>

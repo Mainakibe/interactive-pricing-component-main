@@ -40,13 +40,240 @@ header{
     align-items: center;
     justify-content: center;
     position: relative;
+    top: -2rem;
 }
 .circles{
     position: absolute;
-    top: 4rem;
+    top: 3rem;
 }
 .text{
     position: absolute;
-    top: 6rem;
+    top: 5rem;
     text-align: center;
+}
+h1{
+    font-size: 30px;
+    color: hsl(227, 35%, 25%);
+}
+p{
+    color: hsl(225, 20%, 60%);
+    font-size: 15px;
+}
+
+/* container */
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;  
+    position: absolute;
+    height: 100vh;
+    top: 15.5rem;
+    width:85%;
+}
+.price-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 30px 20px;
+    background-color: rgb(255, 252, 252);
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+}
+.price{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.followers{
+    padding: 10px 0px 20px 0px;
+    color: hsl(225, 20%, 60%);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+small{
+    display: none;
+}
+.slider-container{
+    padding: 20px 0;
+    width: 100%;
+}
+.slider{
+    -webkit-appearance: none;
+    width:100%;
+    height: 10px;
+    background: linear-gradient(90deg,hsl(174, 77%, 80%)70%, hsl(0, 0%, 83%)70%);
+    opacity: 0.7;
+    outline: none ;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+    border-radius: 20px;
+}
+.pricing{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.dollar h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: hsl(227, 35%, 25%);
+}
+.month{
+    margin-left: 10px;
+    color: hsl(225, 20%, 60%);
+}
+
+.monthly-billing{
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* toggle icon */
+
+.toggle-container{
+    margin-left: 20px;  
+}
+.toggle-btn{
+  width: 65px;
+  height: 25px;  
+  background-color:hsl(0, 0%, 83%);
+  border-radius: 30px;
+  padding: 5px;
+  transition: all 300ms ease-in-out;
+}
+.toggle-btn > .inner-circle{
+    width: 25px;
+    height: 25px;
+    background-color: hsl(224, 65%, 95%);
+    border-radius: 50%;
+    transition: all 300ms ease-in-out;
+}
+.toggle-btn.active{
+    background-color: hsl(174, 77%, 80%);
+}
+.toggle-btn.active > .inner-circle{
+    margin-left: 40px;
+}
+
+/* .slider-billing */
+
+.slider-billing{
+    width: 100%;
+    padding: 30px 0;
+    border-bottom: 2px solid hsl(0, 0%, 83%);
+}
+.billing{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: hsl(225, 20%, 60%);
+    font-size: 13px;
+}
+section{
+    background-color: hsl(16, 100%, 89%);
+    border-radius: 10px;
+    padding: 3px 10px;
+    font-size: 10px;
+    color: hsl(15, 100%, 70%);
+    font-weight: 700;
+}
+
+/* Footer */
+
+footer{
+    margin: 30px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+.list-items{
+    padding: 10px 0;
+    color: hsl(225, 20%, 60%);
+    font-size: 16px;
+}
+span{
+    margin-left:10px;
+}
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0 10px 0;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    background-color: hsl(227, 35%, 25%);
+    color: hsl(226, 100%, 87%);
+}
+
+
+@media (min-width:768px){
+    .price{
+        display: grid;
+        align-items: center;
+        justify-content:space-between;
+        width: 90%;
+    }
+    .followers{
+        grid-column: 1/6;
+        grid-row:1/2;
+    }
+    .slider-container{
+        width: 100%;
+        grid-column: 1/7;
+    }
+    .slider{
+        width:100%;
+    }
+    .pricing{
+        grid-row:1/2;
+    }
+    .container{
+        width: 40%;
+        top: 11.5rem;
+    }
+    .price-wrapper{
+        width: 100%;
+    }
+    .slider-billing{
+        width: 80%;
+    }
+    small{
+        display: inline-block;
+    }
+    footer{
+        display: grid;
+        grid-gap:20px;
+    }
+    .list{
+        align-items: center;
+    }
+    button{
+        grid-column: 5/7;
+    }
 }
