@@ -69,7 +69,7 @@ p{
     flex-wrap: wrap;  
     position: absolute;
     height: 100vh;
-    top: 15.5rem;
+    top: 17rem;
     width:85%;
 }
 .price-wrapper{
@@ -209,7 +209,7 @@ input[type='checkbox']{
     width: 75px;
     height:35px;
     appearance: none;
-    background-color: hsl(0, 0%, 83%);
+    background-color: hsl(224, 65%, 95%);
     outline: none;
     border-radius: 20px;
     transition: .5s;
@@ -224,8 +224,8 @@ input[type='checkbox']:before{
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background-color: hsl(14, 92%, 95%);
-    margin-left: 3px;
+    background-color: white;
+    margin-left: 5px;
     margin-top: 5px;
     transform: scale(1.1);
     transition: .5s;
@@ -247,6 +247,7 @@ input:checked[type='checkbox']:before{
     justify-content: space-between;
     color: hsl(225, 20%, 60%);
     font-size: 13px;
+    padding: 0 20px;
 }
 section{
     background-color: hsl(16, 100%, 89%);
@@ -299,7 +300,6 @@ button{
 }
 
 
-
 @media (min-width:768px){
     .price{
         display: grid;
@@ -340,7 +340,7 @@ button{
         width: 100%;
     }
     .yearly-billing{
-        margin-right: 60px;
+        margin-right: 40px;
     }
     small{
         display: inline-block;
@@ -358,5 +358,8 @@ button{
     .toggle-btn{
         top: 51.5%;
         right: 10%;
+    }
+    .billing{
+        padding: 0 10px;
     }
 }
