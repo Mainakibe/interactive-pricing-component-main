@@ -1,23 +1,23 @@
 //queryselectors
 
-let theToggle = document.querySelector('.toggle-btn input'),
-    monthlyBilling=document.querySelector('.month')
-    pricing=document.querySelector('.price .itemprice')
-    toggleBtn=document.querySelector('.toggle')
-    slider = document.querySelector('.slider')
+const theToggle = document.querySelector('.toggle-btn input')
+const monthlyBilling=document.querySelector('.month')
+const pricing=document.querySelector('.price .itemprice')
+const toggleBtn=document.querySelector('.toggle')
+const slider = document.querySelector('.slider')
 
 toggleBtn.addEventListener('click',()=>{
 
     if(theToggle.checked==true){
 
         let priceInt = parseInt(pricing.textContent)
-        pricing.textContent=`${(priceInt - (priceInt * .255)) * 12}`
+        pricing.textContent=`${(priceInt - (priceInt * .25)) * 12}`
         monthlyBilling.textContent=`/year`;
 
     }
     else{
 
-        monthlyBilling.textContent= `/month`
+        monthlyBilling.textContent= `/month`;
 
     }
 })
@@ -32,7 +32,7 @@ slider.addEventListener('input',()=>{
 
         if(theToggle.checked==true){
 
-            pricing.textContent=`${(8 - (8* .25)) * 12}`
+            pricing.textContent=72
 
         }else{
 
@@ -48,6 +48,7 @@ slider.addEventListener('input',()=>{
         if(theToggle.checked==true){
 
             pricing.textContent=108
+
         }
         else{
 
@@ -74,6 +75,7 @@ slider.addEventListener('input',()=>{
         pageViews.textContent='100K'
 
     }
+
     if(slider.value==4){
 
         if(theToggle.checked==true){
