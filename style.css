@@ -22,6 +22,8 @@ body{
     padding: 0;
     margin: 0;
 }
+
+/* mobile view */
 .wrapper{
     min-height: 100vh;
     max-width: 100%;
@@ -69,7 +71,7 @@ p{
     flex-wrap: wrap;  
     position: absolute;
     height: 100vh;
-    top: 15.5rem;
+    top: 17rem;
     width:85%;
 }
 .price-wrapper{
@@ -160,48 +162,21 @@ small{
 }
 
 .monthly-billing{
-    margin-left: 70px;
+    margin-left: -50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
 }
 .yearly-billing{
-    margin-left: 100px;
+    margin-left: 50px;
 }
 
-/* toggle icon */
-
-/* .toggle-container{
-    margin-left: 20px; 
-    cursor: pointer; 
-}
-.toggle-btn{
-  width: 65px;
-  height: 25px;  
-  background-color:hsl(0, 0%, 83%);
-  border-radius: 30px;
-  padding: 5px;
-  transition: all 300ms ease-in-out;
-}
-.toggle-btn > .inner-circle{
-    width: 25px;
-    height: 25px;
-    background-color: hsl(224, 65%, 95%);
-    border-radius: 50%;
-    transition: all 300ms ease-in-out;
-}
-.toggle-btn.active{
-    background-color: hsl(174, 77%, 80%);
-}
-.toggle-btn.active > .inner-circle{
-    margin-left: 40px;
-} */
-
+/* toggle btn */
 .toggle-btn{
     position: absolute;
     top: 49%;
-    left: 55%;
+    left: 40%;
     transform:translate(-50%,-50%);
 }
 input[type='checkbox']{
@@ -209,7 +184,7 @@ input[type='checkbox']{
     width: 75px;
     height:35px;
     appearance: none;
-    background-color: hsl(0, 0%, 83%);
+    background-color: hsl(224, 65%, 95%);
     outline: none;
     border-radius: 20px;
     transition: .5s;
@@ -224,8 +199,8 @@ input[type='checkbox']:before{
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background-color: hsl(14, 92%, 95%);
-    margin-left: 3px;
+    background-color: white;
+    margin-left: 5px;
     margin-top: 5px;
     transform: scale(1.1);
     transition: .5s;
@@ -247,6 +222,7 @@ input:checked[type='checkbox']:before{
     justify-content: space-between;
     color: hsl(225, 20%, 60%);
     font-size: 13px;
+    padding: 0 20px;
 }
 section{
     background-color: hsl(16, 100%, 89%);
@@ -298,9 +274,9 @@ button{
     cursor: pointer;
 }
 
-
-
+/* tablet view */
 @media (min-width:768px){
+
     .price{
         display: grid;
         align-items: center;
@@ -322,8 +298,8 @@ button{
         grid-row:1/2;
     }
     .container{
-        width: 40%;
-        top: 11.5rem;
+        width: 70%;
+        top: 4rem;
     }
     .price-wrapper{
         width: 100%;
@@ -340,7 +316,7 @@ button{
         width: 100%;
     }
     .yearly-billing{
-        margin-right: 60px;
+        margin-right: 40px;
     }
     small{
         display: inline-block;
@@ -356,7 +332,23 @@ button{
         display: none;
     }
     .toggle-btn{
-        top: 51.5%;
-        right: 10%;
+        top: 51%;
+        right: 55%;
+    }
+    .billing{
+        padding: 0 10px;
+    }
+}
+
+/* desktop view */
+@media (min-width:1280px){
+    .container{
+        width: 50%;
+        top: 12rem;
+    }
+    .toggle-btn{
+        top: 51%;
+        left: 41.5%;
+
     }
 }
