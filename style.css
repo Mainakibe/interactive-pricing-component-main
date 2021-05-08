@@ -126,8 +126,8 @@ small{
     opacity: 1;
 }
 .slider::-webkit-slider-thumb{
-    -webkit-appearance: none;
-    appearance: none;
+    /* -webkit-appearance: none;
+    appearance: none; */
     width: 45px;
     height: 45px;
     border-radius: 50%; 
