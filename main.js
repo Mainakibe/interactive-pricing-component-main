@@ -52,18 +52,18 @@ slider.addEventListener('input',()=>{
         }
         else{
 
-            pricing.textContent=12
+            pricing.textContent=12;
 
         }
 
-        pageViews.textContent='50K'
+        pageViews.textContent='50K';
     }
 
     if(slider.value==3){
 
         if(theToggle.checked==true){
 
-            pricing.textContent=144
+            pricing.textContent=144;
 
         }
         else{
@@ -85,11 +85,11 @@ slider.addEventListener('input',()=>{
         }
         else{
 
-            pricing.textContent=24
+            pricing.textContent=24;
 
         }
 
-        pageViews.textContent='500K'
+        pageViews.textContent='500K';
 
     }
 
@@ -97,16 +97,16 @@ slider.addEventListener('input',()=>{
 
         if(theToggle.checked==true){
 
-            pricing.textContent=324
+            pricing.textContent=324;
 
         }
         else{
 
-            pricing.textContent=36
+            pricing.textContent=36;
 
         }
 
-        pageViews.textContent='1M'
+        pageViews.textContent='1M';
 
     }
 })
