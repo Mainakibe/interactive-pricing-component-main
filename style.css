@@ -126,12 +126,23 @@ small{
     opacity: 1;
 }
 .slider::-webkit-slider-thumb{
-    /* -webkit-appearance: none;
-    appearance: none; */
+    -webkit-appearance: none;
+    appearance: none;
+    width: 45px;
+    height: 45px;
+}
+input[type=range]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
     width: 45px;
     height: 45px;
     border-radius: 50%; 
     cursor: pointer;
+    background:url(/images/icon-slider.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(174, 86%, 45%);
+    background-position: 50% 50%;
+    background-size: 25px 25px;
 }
 .slider::-moz-range-thumb {
     width: 45px;
@@ -223,6 +234,7 @@ input:checked[type='checkbox']:before{
     color: hsl(225, 20%, 60%);
     font-size: 13px;
     padding: 0 20px;
+    margin:0 40px;
 }
 section{
     background-color: hsl(16, 100%, 89%);
@@ -349,6 +361,5 @@ button{
     .toggle-btn{
         top: 51%;
         left: 41.5%;
-
     }
 }
