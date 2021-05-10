@@ -68,7 +68,7 @@ slider.addEventListener('input',()=>{
         }
         else{
 
-            pricing.textContent=16
+            pricing.textContent=16;
 
         }
 
